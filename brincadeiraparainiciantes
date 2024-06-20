@@ -1,0 +1,32 @@
+Primeiro em algum lugar do seu PC ou notebook que possua fácil acesso crie sua pasta de projeto parao javascript, a minha eu coloquei em disco local c: iniciojs
+Depois adcione está pasta no Visual studio code em open folder
+Com a pasta adicionada no vscode, clique em New file e o nomeie como index.html
+com o arquivo index.html aberto no code, você clica em shift e a tecla 1 para inserir uma exclamação "!" irá aparecer duas opções de exclamações e você seleciona a primeira, irá criar uma base de um arquivo html.
+e abaixo deixarei o meu código pronto com o resultado final para vocês testarem essa brincadeirinha para iniciantes em javascript como eu.
+cada alteração no corpo do html você salva e para ver o resultado clica em cima do arquivo index.html com o botão direito e seleciona a opção open with live server
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu primeiro desafio com js</h1>
+    <p>Esse é um texto da minha página desafio</p>
+</body>
+<script>
+let listaCores = ['yellow', 'blue', 'red', 'green','pink',];
+document.body.style.backgroundColor =  listaCores[0];
+
+function trocarCores() {
+    document.body.style.backgroundColor =
+    listaCores[Math.floor(5 * Math.random())];
+}
+
+setInterval(trocarCores, 1000);
+</script>
+</html>
+
+Este acima é o código pronto, copie e cole no seu arquivo html e veja o resultado, simples porém bacana.
